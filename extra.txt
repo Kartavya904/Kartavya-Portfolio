@@ -1,3 +1,10 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleHome.css') }}">
 
 src="{{ url_for('static', filename='/Images/Kartavya.jpg') }}"
+
+
+<div class="ButtonContainer">
+            <button id="projectsButton" class="nav-button" onclick="goToPage('Projects')">Projects</button>
+            <button id="experiencesButton" class="nav-button" onclick="goToPage('Experiences')">Experiences</button>
+            <button id="contactButton" class="nav-button" onclick="goToPage('Contact')">Contact Me</button>
+        </div>
