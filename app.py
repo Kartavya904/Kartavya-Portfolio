@@ -49,6 +49,11 @@ def gateway():
 def year_in_review():
     return render_template('Year-In-Review.html')
 
+@app.route('/Year-In-Review-2022-2023')
+@register_breadcrumb(app, './Year-In-Review-2022-2023', 'Year-In-Review-2022-2023')
+def year_in_review_2022_2023():
+    return render_template('Year-In-Review-2022-2023.html')
+
 @app.route('/Involvements')
 @register_breadcrumb(app, './Involvements', 'Involvements')
 def involvements():

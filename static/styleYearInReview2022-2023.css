@@ -1,6 +1,21 @@
-/* styleGateway.css */
+/* styleYearInReview2022-2023.css */
 
-.Gateways {
+.LibraryImage {
+    margin-left: -200px;
+    margin-top: -240px;
+}
+
+.JapaneseImage {
+    margin-left: -200px;
+    margin-top: -160px;
+}
+
+.BearChatImage {
+    margin-left: -200px;
+    margin-top: -240px;
+}
+
+.Year-In-Reviews {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -11,11 +26,16 @@
     padding: 50px;
     margin: 0px auto;
     text-align: left;
-    overflow: hidden;
     font-family: 'Space Grotesk', sans-serif;
 }
 
 .Back {
     margin-top: -50px;
     margin-left: -50px;
+}
+
+.Year-In-Review {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: -30px;
 }
