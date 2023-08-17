@@ -1,0 +1,30 @@
+/* styleCOOP-1000.css */
+
+.COOP-1000Container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.COOP-1000Image {
+    justify-content: center;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.COOP-1000Text {
+    background-color: rgba(193, 151, 112, 0.71);
+    width: 450px;
+    margin: 0px auto;
+    padding: 50px;
+    text-align: left; /* Aligns the content inside the box to the left */
+    overflow: hidden; /* or overflow: auto; */
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.COOP-1000Title {
+    text-align: justify; /* Aligns the text to be justified (both left and right aligned) */
+    margin-bottom: 10px; /* Adds spacing between sections */
+    margin-top: -50px;
+}

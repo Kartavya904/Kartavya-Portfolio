@@ -59,6 +59,19 @@ def year_in_review_2022_2023():
 def involvements():
     return render_template('Involvements.html')
 
+@app.route('/COOP-1000')
+@register_breadcrumb(app, './COOP-1000', 'COOP-1000')
+def coop_1000():
+    return render_template('COOP-1000.html')
+
+@app.route('/Discord-Exp')
+@app.route('/Discord_Exp')
+@app.route('/Discord-Experience')
+@app.route('/Discord')
+@register_breadcrumb(app, './Discord-Exp', 'Discord-Exp')
+def discord():
+    return render_template('Discord_Exp.html')
+
 @app.route('/Pathways')
 @register_breadcrumb(app, './Pathways', 'Pathways')
 def pathways():
