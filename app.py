@@ -23,14 +23,14 @@ def about_me():
 def projects():
     return render_template('Projects.html')
 
-@app.route('/Year-In-Review')
-@register_breadcrumb(app, './Year-In-Review', 'Year In Review')
-def year_in_review():
-    return render_template('Year-In-Review.html')
+@app.route('/Experiences')
+@register_breadcrumb(app, './Experiences', 'Experiences')
+def experiences():
+    return render_template('Experiences.html')
 
 @app.route('/Pathways')
 @register_breadcrumb(app, './Pathways', 'Pathways')
-def more():
+def pathways():
     return render_template('Pathways.html')
 
 @app.route('/Contact')

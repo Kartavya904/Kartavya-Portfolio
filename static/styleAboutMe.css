@@ -1,0 +1,46 @@
+/* styleAboutMe.css */
+.AboutMeContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AboutMeImage {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+#Kartavya-About-Me-Picture {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.TextBox {
+    background-color: rgba(193, 151, 112, 0.71);
+    width: 450px;
+    margin: 0px auto;
+    padding: 50px;
+    text-align: left; /* Aligns the content inside the box to the left */
+    overflow: hidden; /* or overflow: auto; */
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.AboutMe {
+    text-align: justify; /* Aligns the text to be justified (both left and right aligned) */
+    margin-bottom: 10px; /* Adds spacing between sections */
+    margin-top: -50px;
+}
+
+.TextData {
+    text-align: justify; /* Aligns the text to be justified (both left and right aligned) */
+    margin-bottom: -20px;
+}
+
+.AboutMe h4,
+.TextData h6 {
+    font-family: 'Space Grotesk', sans-serif; /* Apply to h1 and h6 elements */
+    /* ... other styles */
+}
