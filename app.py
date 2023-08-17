@@ -5,10 +5,12 @@ from flask_breadcrumbs import Breadcrumbs, register_breadcrumb
 import os
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 Breadcrumbs(app=app)
-secret_key = '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'
+secret_key = os.getenv("SENDGRID_API_KEY")
+# print("secret_key: ", secret_key)
 
 # Define routes for each page
 @app.route('/')
