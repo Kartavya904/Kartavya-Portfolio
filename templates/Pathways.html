@@ -5,5 +5,28 @@ Pathways
 {% endblock %}
 
 {% block content %}
-<div><h1>Testing</h1></div>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylePathways.css') }}">
+<script>
+    function goToPage(pageName) {
+        window.location.href = pageName;
+    }
+</script>
+<div class="Pathways">
+    <div class="Pathway">
+        <span><h2>Pathways</h2></span>
+    </div>
+    <div class="Sub-Box" onclick="goToPage('Year-In-Review')">
+        <h2>Year-In-Review</h2>
+        <!-- Content for Year-In-Review division goes here -->
+    </div>
+    <div class="Sub-Box" onclick="goToPage('Honors-Experience')">
+        <h2>Honors Experience</h2>
+        <!-- Content for Honors Experience division goes here -->
+    </div>
+    <div class="Sub-Box" onclick="goToPage('Gateway')">
+        <h2>Gateway</h2>
+        <!-- Content for Gateway division goes here -->
+    </div>
+</div>
+<br><br>
 {% endblock %}

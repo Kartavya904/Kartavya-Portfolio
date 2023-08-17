@@ -1,0 +1,40 @@
+/* stylePathways.css */
+
+.Pathways {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start; /* Change justify-content to flex-start */
+    margin-top: 0px;
+    background-color: rgba(193, 151, 112, 0.71);
+    width: 50%;
+    margin: 0px auto;
+    padding: 50px;
+    text-align: left; /* Aligns the content inside the box to the left */
+    overflow: hidden; /* or overflow: auto; */
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.Pathway {
+    text-align: left; /* Aligns the text to be justified (both left and right aligned) */
+    margin-bottom: 10px; /* Adds spacing between sections */
+    margin-top: -50px;
+}
+
+.Sub-Box {
+    color: #993500;
+    width: 90%;
+    height: 15vh;
+    margin: 10px 0; /* Add margin for spacing */
+    background-color: #FFFCCC;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Round the corners */
+    cursor: pointer;
+    &:hover {
+        background-color: #993500;
+        color: #FFFCCC ;
+    }
+}

@@ -35,7 +35,7 @@ body {
 
 .Box {
     background-color: rgba(193, 151, 112, 0.71); 
-    width: 100%;
+    width: 120%;
     height: 15vh;
     display: flex;
     align-items: center;

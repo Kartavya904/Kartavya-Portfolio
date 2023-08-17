@@ -34,6 +34,26 @@ def projects():
 def experiences():
     return render_template('Experiences.html')
 
+@app.route('/Honors-Experience')
+@register_breadcrumb(app, './Honors-Experience', 'Honors-Experience')
+def honors_experience():
+    return render_template('Honors-Experience.html')
+
+@app.route('/Gateway')
+@register_breadcrumb(app, './Gatway', 'Gateway')
+def gateway():
+    return render_template('Gateway.html')
+
+@app.route('/Year-In-Review')
+@register_breadcrumb(app, './Year-In-Review', 'Year-In-Review')
+def year_in_review():
+    return render_template('Year-In-Review.html')
+
+@app.route('/Involvements')
+@register_breadcrumb(app, './Involvements', 'Involvements')
+def involvements():
+    return render_template('Involvements.html')
+
 @app.route('/Pathways')
 @register_breadcrumb(app, './Pathways', 'Pathways')
 def pathways():
