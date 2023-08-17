@@ -5,5 +5,78 @@ Contact
 {% endblock %}
 
 {% block content %}
-<div><h1>Testing</h1></div>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleContact.css') }}">
+<div class="ContactBox">
+    <h2>I Would Love To Connect With You!</h2>
+    <div class="TextAndForm">
+        <div class="ContactText">
+            <p>Feel free to get in touch with me by filling the form. I'm looking forward to hearing from you!<br><br>We can do so much together. Lets Talk!<br><br>You Can Mail Me At: <br>Singhk6@mail.uc.edu / Kartavya.singh17@yahoo.com<br><br>You Can Talk To Me At: <br>+1 (513)-837-7683<br><br>You Can Follow Me On: <br></p>
+            <div class="Icons">
+                <div class="SocialIcon LinkedIn">
+                    <a href="https://www.linkedin.com/in/kartavya-singh-singhk6/" target="_blank" data-tooltip="LinkedIn">
+                        <img src="{{ url_for('static', filename='/Images/linkedin.png') }}" alt="LinkedIn Icon">
+                    </a>
+                </div>
+                <div class="SocialIcon GitHub">
+                    <a href="https://github.com/Kartavya904" target="_blank" data-tooltip="GitHub">
+                        <img src="{{ url_for('static', filename='/Images/github.png') }}" alt="GitHub Icon">
+                    </a>
+                </div>
+                <div class="SocialIcon Discord">
+                    <a href="https://discordapp.com/users/439541365580365835" target="_blank" data-tooltip="Discord">
+                        <img src="{{ url_for('static', filename='/Images/discord.png') }}" alt="Discord Icon">
+                    </a>
+                </div>
+                <div class="SocialIcon Instagram">
+                    <a href="https://www.instagram.com/kartavya1710/" target="_blank" data-tooltip="Instagram">
+                        <img src="{{ url_for('static', filename='/Images/instagram.png') }}" alt="Instagram Icon">
+                    </a>
+                </div>                                               
+            </div>
+        </div>
+        <div class="ContactForm">
+            <form action="/submit_contact" method="post">
+                <div class="FormRow">
+                    <div class="FormField">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="This field is required!" required>
+                    </div>
+                    <div class="FormField">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="This field is required!" required>
+                    </div>
+                </div>
+                <div class="FormRow">
+                    <div class="FormField">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="FormField">
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location">
+                    </div>
+                </div>
+                <div class="FormRow">
+                    <div class="FormField">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="General/Casual" selected>General/Casual</option>
+                            <option value="Project">Project</option>
+                            <option value="Experience">Experience</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="FormRow">
+                    <div class="FormField">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Please Enter Your Message Here..."  required></textarea>
+                    </div>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+<br><br>
 {% endblock %}
