@@ -5,5 +5,31 @@ Involvements
 {% endblock %}
 
 {% block content %}
-<div><h1>Testing</h1></div>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleInvolvements.css') }}">
+<script>
+    function goToPage(pageName) {
+        window.location.href = pageName;
+    }
+</script>
+<div class="Involvements">
+    <div class="Involvement">
+        <span><h2>Involvements</h2></span>
+    </div>
+    <div class="Sub-Box" onclick="goToPage('COOP-1000')">
+        <div class="Sub-Box-Image">
+            <img src="static/Images/UC_LC.png" alt="UC_LC" width="125" height="125">
+        </div>
+        <div class="Sub-Box-Text">
+            <div class="Sub-Box-Date">
+                <h4>January 2023</h4>
+            </div>
+            <div class="Sub-Box-Title">
+                <h2>COOP 1000 Course</h2>
+            </div>
+            <div class="Sub-Box-Description">
+                <p>Engaged in COOP 1000 course for personal growth and shared my expertise as an SRS Leader to empower fellow students.</p>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
