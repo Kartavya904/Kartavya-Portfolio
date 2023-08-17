@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+
+{% block title %}
+Portfolio - Kartavya Singh
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleHome.css') }}">
+<div class="content-container">
+    <div class="circle-image-container">
+        <img src="{{ url_for('static', filename='/Images/Kartavya.jpg') }}" alt="Kartavya Singh" onclick="goToPage('About_Me')" class="circle-profile-picture">
+    </div>
+    <div class="text-container">
+        <div class="Hello-World">
+            <span>Hello World!</span>
+        </div>
+        <div><br><br></div>
+        <div class="Comment">
+            <span>Programmers never die; they just lose their functions.</span>
+        </div>
+    </div>
+</div>
+<script>
+    function goToPage(url) {
+        window.location.href = url;
+    }
+</script>
+{% endblock %}

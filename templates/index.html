@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&display=swap">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %} {% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap">
+    </head>
+    <body>
+        <div class="common-content" height="100%">
+            <div class="background-image"></div>
+            <div class="Portfolio" onclick="goToPage('Home')">PORTFOLIO</div>
+            <br>
+            <div class="Name" onclick="goToPage('About_Me')">KARTAVYA SINGH</div>
+            <div class="Box">
+                <button id="homeButton" class="nav-button" onclick="goToPage('Home')">Home</button>
+                <button id="aboutButton" class="nav-button" onclick="goToPage('About_Me')">About Me</button>
+                <button id="projectsButton" class="nav-button" onclick="goToPage('Projects')">Projects</button>
+                <button id="yearButton" class="nav-button" onclick="goToPage('Year-In-Review')">Year-In-Review</button>
+                <button id="moreButton" class="nav-button" onclick="goToPage('Pathways')">Pathways</button>
+                <button id="contactButton" class="nav-button" onclick="goToPage('Contact')">Contact</button>
+            </div>
+            <script>
+                function goToPage(url) {
+                    window.location.href = url;
+                }
+            
+                function setActiveButton(pageName) {
+                    const buttons = document.querySelectorAll(".nav-button");
+                    pageName = pageName.replace(/_/g, " ");
+                    buttons.forEach(button => {
+                        if (button.textContent.trim() === pageName) {
+                            button.classList.add("active");
+                        } else {
+                            button.classList.remove("active");
+                        }
+                    });
+                }
+            
+                const currentPage = window.location.pathname.split('/').pop();
+                setActiveButton(currentPage);
+            </script>
+        </div>
+        {% block content %}
+        {% endblock %}
+        <footer>
+            <div class="FooterBox">
+                <div class="FooterColumn">
+                    <div>Call</div>
+                    <div><br></div>
+                    <div>+1 (513)-837-7683</div>
+                </div>
+                <div class="FooterColumn">
+                    <div>Email</div>
+                    <div>Singhk6@mail.uc.edu</div>
+                    <div>Kartavya.singh17@yahoo.com</div>
+                </div>
+                <div class="FooterColumn">
+                    <div>Follow</div>
+                    <div class="Icons">
+                        <div class="SocialIcon LinkedIn">
+                            <a href="https://www.linkedin.com/in/kartavya-singh-singhk6/" target="_blank" data-tooltip="LinkedIn">
+                                <img src="{{ url_for('static', filename='/Images/linkedin.png') }}" alt="LinkedIn Icon">
+                            </a>
+                        </div>
+                        <div class="SocialIcon GitHub">
+                            <a href="https://github.com/Kartavya904" target="_blank" data-tooltip="GitHub">
+                                <img src="{{ url_for('static', filename='/Images/github.png') }}" alt="GitHub Icon">
+                            </a>
+                        </div>
+                        <div class="SocialIcon Discord">
+                            <a href="https://discord.com/invite/cFQdY4tz" target="_blank" data-tooltip="Discord">
+                                <img src="{{ url_for('static', filename='/Images/discord.png') }}" alt="Discord Icon">
+                            </a>
+                        </div>
+                        <div class="SocialIcon Instagram">
+                            <a href="https://www.instagram.com/kartavya1710/" target="_blank" data-tooltip="Instagram">
+                                <img src="{{ url_for('static', filename='/Images/instagram.png') }}" alt="Instagram Icon">
+                            </a>
+                        </div>                                               
+                    </div>
+                </div>                
+            </div>
+        </footer>
+        
+    </body>
+</html>
