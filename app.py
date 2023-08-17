@@ -34,6 +34,7 @@ def projects():
 def experiences():
     return render_template('Experiences.html')
 
+@app.route('/Honors_Experience')
 @app.route('/Honors-Experience')
 @register_breadcrumb(app, './Honors-Experience', 'Honors-Experience')
 def honors_experience():
@@ -64,10 +65,7 @@ def involvements():
 def coop_1000():
     return render_template('COOP-1000.html')
 
-@app.route('/Discord-Exp')
 @app.route('/Discord_Exp')
-@app.route('/Discord-Experience')
-@app.route('/Discord')
 @register_breadcrumb(app, './Discord-Exp', 'Discord-Exp')
 def discord():
     return render_template('Discord_Exp.html')
