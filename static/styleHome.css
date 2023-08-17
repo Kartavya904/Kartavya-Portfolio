@@ -1,0 +1,58 @@
+/* styleHome.css */
+.content-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.circle-image-container {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+}
+
+.circle-profile-picture {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* Creates a circular shape */
+    cursor: pointer;
+}
+
+.text-container {
+    flex: 2;
+    padding: 20px;
+    align-content: center;
+}
+
+.Hello-World {
+    font-size: 32px;
+    letter-spacing: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border-right: 5px solid;
+    display: inline-block;
+    color: white;
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 2s steps(15),
+    cursor 0.5s step-end infinite;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+.Comment {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200; 
+    font-size: 16px; 
+}
