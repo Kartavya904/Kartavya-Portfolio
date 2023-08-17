@@ -1,0 +1,3 @@
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleHome.css') }}">
+
+src="{{ url_for('static', filename='/Images/Kartavya.jpg') }}"
