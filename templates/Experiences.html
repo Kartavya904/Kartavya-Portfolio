@@ -1,19 +1,19 @@
-{% extends "Home.html" %}
+{% extends "index.html" %}
 
 {% block title %}
-Involvements
+Experiences
 {% endblock %}
 
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleInvolvements.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleExperiences.css') }}">
 <script>
     function goToPage(pageName) {
         window.location.href = pageName;
     }
 </script>
-<div class="Involvements">
-    <div class="Involvement">
-        <span><h2>Involvements</h2></span>
+<div class="Experiences">
+    <div class="Experience">
+        <span><h2>Experiences</h2></span>
     </div>
     <div class="Sub-Box" onclick="goToPage('COOP-1000')">
         <div class="Sub-Box-Image">
