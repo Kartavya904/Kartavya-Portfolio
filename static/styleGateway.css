@@ -1,0 +1,15 @@
+/* styleGateway.css */
+
+.Gateways {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start; /* Change justify-content to flex-start */
+    margin-top: 0px;
+    background-color: rgba(193, 151, 112, 0.71);
+    width: 50%;
+    margin: 0px auto;
+    text-align: left; /* Aligns the content inside the box to the left */
+    overflow: hidden; /* or overflow: auto; */
+    font-family: 'Space Grotesk', sans-serif;
+}
