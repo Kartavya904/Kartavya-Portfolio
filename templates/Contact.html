@@ -35,7 +35,7 @@ Contact
             </div>
         </div>
         <div class="ContactForm">
-            <form action="/submit_contact" method="post">
+            <form action="{{ url_for('contact') }}" method="POST">
                 <div class="FormRow">
                     <div class="FormField">
                         <label for="name">Name:</label>
