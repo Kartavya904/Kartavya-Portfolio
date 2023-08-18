@@ -1,5 +1,5 @@
 import json
-import os, sys, time, datetime, random, string, re, requests
+import os, sys, time, datetime, random, string, re
 from flask import Flask, Blueprint, render_template, request, session, redirect, url_for, jsonify, flash, current_app, g
 from flask_breadcrumbs import Breadcrumbs, register_breadcrumb
 import os
