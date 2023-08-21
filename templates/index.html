@@ -27,7 +27,7 @@
                 <button id="projectsButton" class="nav-button" onclick="goToPage('Projects')">Projects</button>
                 <button id="experiencesButton" class="nav-button" onclick="goToPage('Experiences')">Experiences</button>
                 <button id="involvementsButton" class="nav-button" onclick="goToPage('Involvements')">Involvements</button>
-                <button id="moreButton" class="nav-button" onclick="goToPage('Pathways')">Pathways</button>
+                <button id="moreButton" class="nav-button" onclick="goToPage('Honors')">Honors</button>
                 <button id="contactButton" class="nav-button" onclick="goToPage('Contact')">Contact</button>
             </div>
             <script>
@@ -48,7 +48,11 @@
                 }
             
                 const currentPage = window.location.pathname.split('/').pop();
-                setActiveButton(currentPage);
+                if (currentPage === "") {
+                    setActiveButton("Home");
+                } else {
+                    setActiveButton(currentPage);
+                }
             </script>
         </div>
         {% block content %}

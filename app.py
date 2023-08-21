@@ -30,7 +30,6 @@ def projects():
     return render_template('Projects.html')
 
 @app.route('/Honors')
-@app.route('/Pathways')
 # @register_breadcrumb(app, './Projects', 'Projects')
 def honros():
     return render_template('Honors.html')
