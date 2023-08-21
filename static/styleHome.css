@@ -24,6 +24,7 @@
     flex: 2;
     padding: 20px;
     align-content: center;
+    text-align: center;
 }
 
 .Hello-World {
@@ -34,7 +35,6 @@
     display: inline-block;
     color: white;
     position: relative;
-    width: 50%;
     white-space: nowrap;
     overflow: hidden;
     animation: 
@@ -47,7 +47,8 @@
 }
 
 @keyframes typing {
-    from { width: 0 }
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 .Comment {
@@ -98,6 +99,7 @@
 
     .text-container {
         padding: 10px;
+        text-align: center;
     }
 
     .Hello-World {
@@ -106,9 +108,20 @@
         white-space: normal; /* Allow text to wrap */
         overflow: visible; /* Show full text */
         border-right: none; /* Remove border */
-        animation: none; /* Disable animation */
+        animation: 
+        typing 2s steps(15),
+        cursor 0.5s step-end infinite;
     }
-
+    
+    @keyframes cursor {
+        50% { border-color: transparent; }
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    
     .Comment {
         font-size: 14px; /* Reduce font size */
     }

@@ -44,3 +44,12 @@
     font-family: 'Space Grotesk', sans-serif; /* Apply to h1 and h6 elements */
     /* ... other styles */
 }
+
+@media (max-width: 769px) {
+}
+
+@media (max-width: 420px) {
+}
+
+@media (max-width: 380px) {
+}

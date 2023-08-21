@@ -77,3 +77,12 @@
     margin-right: 30px;
     font-size: small;
 }
+
+@media (max-width: 769px) {
+}
+
+@media (max-width: 420px) {
+}
+
+@media (max-width: 380px) {
+}
