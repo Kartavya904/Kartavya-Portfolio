@@ -6,9 +6,10 @@ Gateway
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleGateway.css') }}">
+<br>
 <div class="Gateways">
     <div class="Back">
-        <a href="Pathways"><img src="static/Images/Back.png" alt="Back" width="25" height="25"></a>
+        <a href="Honors"><img src="static/Images/Back.png" alt="Back" width="25" height="25"></a>
     </div>
     <div class="Gateway">
         <h2>Gateway</h2>
@@ -31,5 +32,19 @@ Gateway
         </p>
     </div>
 </div>
+<script>
+    function setActiveButton(pageName) {
+                    const buttons = document.querySelectorAll(".nav-button");
+                    pageName = pageName.replace(/_/g, " ");
+                    buttons.forEach(button => {
+                        if (button.textContent.trim() === pageName) {
+                            button.classList.add("active");
+                        } else {
+                            button.classList.remove("active");
+                        }
+                    });
+                }
+                setActiveButton("Honors");
+</script>
 <br>
 {% endblock %}

@@ -6,6 +6,7 @@ COOP-1000 Experience
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleDiscord.css') }}">
+<br>
 <div class="DiscordContainer">
     <div class="DiscordImage">
         <img id="Kartavya-About-Me-Picture" src="{{ url_for('static', filename='/Images/Discord_Exp_2.jpeg') }}" width="400" height="200" alt="COOP 1000 Picture">
@@ -51,4 +52,18 @@ COOP-1000 Experience
     </div>
 </div>
 <br>
+<script>
+    function setActiveButton(pageName) {
+                    const buttons = document.querySelectorAll(".nav-button");
+                    pageName = pageName.replace(/_/g, " ");
+                    buttons.forEach(button => {
+                        if (button.textContent.trim() === pageName) {
+                            button.classList.add("active");
+                        } else {
+                            button.classList.remove("active");
+                        }
+                    });
+                }
+                setActiveButton("Honors");
+</script>
 {% endblock %}

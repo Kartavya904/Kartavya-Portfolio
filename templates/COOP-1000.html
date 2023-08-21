@@ -6,6 +6,7 @@ COOP-1000 Experience
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleCOOP-1000.css') }}">
+<br>
 <div class="COOP-1000Container">
     <div class="COOP-1000Image">
         <img id="COOP-1000-Picture" src="{{ url_for('static', filename='/Images/UC_LC.png') }}" width="200" height="200" alt="COOP 1000 Picture">
@@ -36,5 +37,19 @@ COOP-1000 Experience
         </div>
     </div>
 </div>
+<script>
+    function setActiveButton(pageName) {
+                    const buttons = document.querySelectorAll(".nav-button");
+                    pageName = pageName.replace(/_/g, " ");
+                    buttons.forEach(button => {
+                        if (button.textContent.trim() === pageName) {
+                            button.classList.add("active");
+                        } else {
+                            button.classList.remove("active");
+                        }
+                    });
+                }
+                setActiveButton("Honors");
+</script>
 <br>
 {% endblock %}

@@ -1,6 +1,6 @@
-/* stylePathways.css */
+/* styleHonors_Experiences.css */
 
-.Pathways {
+.Honors {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -15,7 +15,7 @@
     font-family: 'Space Grotesk', sans-serif;
 }
 
-.Pathway {
+.Honor {
     text-align: left; /* Aligns the text to be justified (both left and right aligned) */
     margin-bottom: 10px; /* Adds spacing between sections */
     margin-top: -50px;

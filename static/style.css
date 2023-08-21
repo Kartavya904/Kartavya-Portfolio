@@ -35,11 +35,12 @@ body {
 
 .Box {
     background-color: rgba(193, 151, 112, 0.71); 
-    width: 120%;
+    width: 100%;
     height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: auto;
 }
 
 .FooterBox {
@@ -49,7 +50,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
 }
 
 .FooterColumn {
@@ -111,3 +111,52 @@ body {
     font-size: 14px;
     white-space: nowrap; 
 }
+
+
+/* ... (other existing styles) */
+
+/* Media query for screens with max-width 768px (typical tablet and mobile screens) */
+@media (max-width: 415px) {
+    body {
+        background-size: auto; /* Adjust background size for smaller screens */
+    }
+
+    .common-content {
+        min-height: 20vh; /* Adjust content height for better mobile experience */
+    }
+
+    .Box {
+        width: 100%; /* Adjust width for full width on smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .FooterBox {
+        height: auto; /* Allow footer height to adjust based on content */
+    }
+
+    .FooterColumn {
+        padding: 5px; /* Reduce padding for smaller screens */
+        font-size: 12px;
+    }
+
+    .nav-button {
+        font-size: 8px; /* Adjust font size for buttons on smaller screens */
+        padding: 5px 10px; /* Adjust button padding */
+    }
+
+    /* Adjust social icon styles */
+    .SocialIcon {
+        margin: 5px 0;
+    }
+
+    .SocialIcon img {
+        width: 15px; /* Reduce icon size */
+        height: 15px;
+    }
+
+    /* Add any other necessary adjustments */
+}
+
+
+
+

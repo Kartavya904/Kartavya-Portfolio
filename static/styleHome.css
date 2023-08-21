@@ -74,3 +74,49 @@
         background-color: #FFFCCC;
     }
 }
+
+/* styleHome.css */
+/* Mobile Browser */
+@media (max-width: 768px) {
+    /* Apply styles for screens with a maximum width of 768px (typical tablet and mobile screens) */
+
+    .content-container {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center; /* Center content horizontally */
+        padding: 20px; /* Add some spacing around the content */
+    }
+
+    .circle-image-container {
+        text-align: center; /* Center the image */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .circle-profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .text-container {
+        padding: 10px;
+    }
+
+    .Hello-World {
+        font-size: 24px; /* Reduce font size */
+        width: 100%; /* Take up full width */
+        white-space: normal; /* Allow text to wrap */
+        overflow: visible; /* Show full text */
+        border-right: none; /* Remove border */
+        animation: none; /* Disable animation */
+    }
+
+    .Comment {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .nav-sub-button {
+        margin-top: 20px;
+        margin-left: 0;
+        padding: 5px 10px;
+        font-size: 10px; /* Reduce font size */
+    }
+}

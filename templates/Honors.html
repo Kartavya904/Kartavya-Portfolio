@@ -1,19 +1,20 @@
 {% extends "index.html" %}
 
 {% block title %}
-Pathways
+Honors_Experiences
 {% endblock %}
 
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylePathways.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleHonor.css') }}">
 <script>
     function goToPage(pageName) {
         window.location.href = pageName;
     }
 </script>
-<div class="Pathways">
-    <div class="Pathway">
-        <span><h2>Pathways</h2></span>
+<br>
+<div class="Honors">
+    <div class="Honor">
+        <span><h2>Honors Program</h2></span>
     </div>
     <div class="Sub-Box" onclick="goToPage('Year-In-Review')">
         <h2>Year-In-Review</h2>
