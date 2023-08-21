@@ -116,18 +116,19 @@ body {
 /* ... (other existing styles) */
 
 /* Media query for screens with max-width 768px (typical tablet and mobile screens) */
-@media (max-width: 380px) {
+
+@media (max-width: 769px) {
     body {
         background-size: auto; /* Adjust background size for smaller screens */
     }
 
     .common-content {
-        min-height: 20vh; /* Adjust content height for better mobile experience */
+        min-height: 40vh; /* Adjust content height for better mobile experience */
     }
 
     .Box {
         width: 100%; /* Adjust width for full width on smaller screens */
-        height: auto; /* Allow height to adjust based on content */
+        height: 50px; /* Allow height to adjust based on content */
     }
 
     .FooterBox {
@@ -136,11 +137,11 @@ body {
 
     .FooterColumn {
         padding: 5px; /* Reduce padding for smaller screens */
-        font-size: 12px;
+        font-size: medium;
     }
 
     .nav-button {
-        font-size: 8px; /* Adjust font size for buttons on smaller screens */
+        font-size: auto; /* Adjust font size for buttons on smaller screens */
         padding: 8px 5px; /* Adjust button padding */
     }
 
@@ -150,12 +151,12 @@ body {
     }
 
     .SocialIcon img {
-        width: 20px; /* Reduce icon size */
-        height: 20px;
+        width: 25px; /* Reduce icon size */
+        height: 25px;
     }
 
     .Num {
-        font-size: x-small;
+        font-size: medium;
     }
 
     /* Add any other necessary adjustments */
@@ -197,6 +198,51 @@ body {
     .SocialIcon img {
         width: 25px; /* Reduce icon size */
         height: 25px;
+    }
+
+    .Num {
+        font-size: x-small;
+    }
+
+    /* Add any other necessary adjustments */
+}
+
+@media (max-width: 380px) {
+    body {
+        background-size: auto; /* Adjust background size for smaller screens */
+    }
+
+    .common-content {
+        min-height: 20vh; /* Adjust content height for better mobile experience */
+    }
+
+    .Box {
+        width: 100%; /* Adjust width for full width on smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .FooterBox {
+        height: auto; /* Allow footer height to adjust based on content */
+    }
+
+    .FooterColumn {
+        padding: 5px; /* Reduce padding for smaller screens */
+        font-size: 12px;
+    }
+
+    .nav-button {
+        font-size: 8px; /* Adjust font size for buttons on smaller screens */
+        padding: 8px 5px; /* Adjust button padding */
+    }
+
+    /* Adjust social icon styles */
+    .SocialIcon {
+        margin: 5px 0;
+    }
+
+    .SocialIcon img {
+        width: 20px; /* Reduce icon size */
+        height: 20px;
     }
 
     .Num {
