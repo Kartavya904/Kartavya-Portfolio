@@ -78,7 +78,7 @@
 
 /* styleHome.css */
 /* Mobile Browser */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     /* Apply styles for screens with a maximum width of 768px (typical tablet and mobile screens) */
 
     .content-container {
@@ -93,8 +93,8 @@
     }
 
     .circle-profile-picture {
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
     }
 
     .text-container {
@@ -104,10 +104,6 @@
 
     .Hello-World {
         font-size: 24px; /* Reduce font size */
-        width: 100%; /* Take up full width */
-        white-space: normal; /* Allow text to wrap */
-        overflow: visible; /* Show full text */
-        border-right: none; /* Remove border */
         animation: 
         typing 2s steps(15),
         cursor 0.5s step-end infinite;
@@ -121,7 +117,7 @@
         from { width: 0; }
         to { width: 100%; }
     }
-    
+
     .Comment {
         font-size: 14px; /* Reduce font size */
     }
