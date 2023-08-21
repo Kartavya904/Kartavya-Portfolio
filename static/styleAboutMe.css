@@ -45,11 +45,52 @@
     /* ... other styles */
 }
 
-@media (max-width: 769px) {
-}
-
 @media (max-width: 420px) {
+    .AboutMeImage {
+        max-width: 250px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .TextBox {
+        width: 80%;
+        padding: 5px;
+    }
+
+    .AboutMe {
+        text-align: justify; /* Aligns the text to be justified (both left and right aligned) */
+        margin-bottom: 0px; /* Adds spacing between sections */
+        margin-top: 0px;
+    }
+    
+    .TextData {
+        text-align: justify; /* Aligns the text to be justified (both left and right aligned) */
+        margin-bottom: 0px;
+        padding: 5px;
+    }
 }
 
 @media (max-width: 380px) {
+    .AboutMeImage {
+        max-width: 250px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .TextBox {
+        width: 80%;
+        padding: 5px;
+    }
+
+    .AboutMe {
+        text-align: justify; /* Aligns the text to be justified (both left and right aligned) */
+        margin-bottom: 0px; /* Adds spacing between sections */
+        margin-top: 0px;
+    }
+    
+    .TextData {
+        text-align: justify; /* Aligns the text to be justified (both left and right aligned) */
+        margin-bottom: 0px;
+        padding: 5px;
+    }
 }

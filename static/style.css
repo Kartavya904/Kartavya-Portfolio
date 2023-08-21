@@ -123,7 +123,7 @@ body {
     }
 
     .common-content {
-        min-height: 40vh; /* Adjust content height for better mobile experience */
+        min-height: 30vh; /* Adjust content height for better mobile experience */
     }
 
     .Box {

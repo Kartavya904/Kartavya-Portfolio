@@ -93,17 +93,63 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 769px) {
     .ContactBox {
-        width: 100%;
+        width: 90%;
     }
 }
 
-@media (max-width: 769px) {
-}
-
 @media (max-width: 420px) {
+    .ContactBox {
+        width: 90%;
+    }
+    .TextAndForm {
+        flex-direction: column; /* Stack children vertically on small screens */
+        align-items: center; /* Center children horizontally */
+    }
+    
+    .ContactText {
+        text-align: center;
+        font-family: 'Space Grotesk', sans-serif;
+        margin-bottom: 20px;
+        padding: 0 20px; /* Add padding to both sides */
+        max-width: 100%; /* Ensure text doesn't exceed the container width */
+    }
+    
+    .ContactForm {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        padding: 20px; /* Remove the left padding */
+        max-width: 100%; /* Ensure form doesn't exceed the container width */
+    }    
 }
 
 @media (max-width: 380px) {
+    .ContactBox {
+        width: 90%;
+    }
+    
+    .TextAndForm {
+        flex-direction: column; /* Stack children vertically on small screens */
+        align-items: center; /* Center children horizontally */
+    }
+    
+    .ContactText {
+        text-align: center;
+        font-family: 'Space Grotesk', sans-serif;
+        margin-bottom: 20px;
+        padding: 0 20px; /* Add padding to both sides */
+        max-width: 100%; /* Ensure text doesn't exceed the container width */
+    }
+    
+    .ContactForm {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        padding: 20px; /* Remove the left padding */
+        max-width: 100%; /* Ensure form doesn't exceed the container width */
+    }    
 }
