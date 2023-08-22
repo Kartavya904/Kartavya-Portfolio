@@ -55,11 +55,32 @@
     display: block;
 }
 
-@media (max-width: 769px) {
-}
-
 @media (max-width: 420px) {
+    .Sub-Box {
+        margin-left: 10px;
+        height:auto;
+        width: 90%;
+        font-size: 8px;
+    }
+
+    .Sub-Box:hover .HoverText {
+        display: block;
+        margin-top: 20px;
+        font-size: xx-small;
+    }
 }
 
 @media (max-width: 380px) {
+    .Sub-Box {
+        margin-left: 10px;
+        height:auto;
+        width: 90%;
+        font-size: 8px;
+    }
+
+    .Sub-Box:hover .HoverText {
+        display: block;
+        margin-top: 20px;
+        font-size: xx-small;
+    }
 }
