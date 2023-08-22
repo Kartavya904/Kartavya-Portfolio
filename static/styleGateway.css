@@ -26,11 +26,22 @@
     margin-top: -30px;
 }
 
-@media (max-width: 769px) {
-}
-
 @media (max-width: 420px) {
+    .Gateway {
+        font-size: small;
+    }
+
+    .GatewayText {
+        font-size: small;
+    }
 }
 
 @media (max-width: 380px) {
+    .Gateway {
+        font-size: small;
+    }
+
+    .GatewayText {
+        font-size: small;
+    }
 }

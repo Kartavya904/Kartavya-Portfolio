@@ -17,6 +17,7 @@
     background-color: rgba(193, 151, 112, 0.71);
     width: 450px;
     margin: 0px auto;
+    justify-content: center;
     padding: 50px;
     text-align: left; /* Aligns the content inside the box to the left */
     overflow: hidden; /* or overflow: auto; */
@@ -34,11 +35,34 @@
     margin-left: -50px;
 }
 
-@media (max-width: 769px) {
-}
-
 @media (max-width: 420px) {
+
+    .COOP-1000Title {
+        font-size: small;
+    }
+
+    .COOP-1000Description {
+        font-size: small;
+    }
+
+    .COOP-1000Text {
+        width: 70%;
+        padding: 50px;
+    }
 }
 
 @media (max-width: 380px) {
+
+    .COOP-1000Title {
+        font-size: small;
+    }
+
+    .COOP-1000Description {
+        font-size: small;
+    }
+
+    .COOP-1000Text {
+        width: 70%;
+        padding: 50px;
+    }
 }

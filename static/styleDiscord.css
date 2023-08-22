@@ -35,11 +35,32 @@
     margin-left: -50px;
 }
 
-@media (max-width: 769px) {
-}
-
 @media (max-width: 420px) {
+    .DiscordTitle {
+        font-size: small;
+    }
+
+    .DiscordDescription {
+        font-size: small;
+    }
+
+    .DiscordText {
+        width: 70%;
+        padding: 50px;
+    }
 }
 
 @media (max-width: 380px) {
+    .DiscordTitle {
+        font-size: small;
+    }
+
+    .DiscordDescription {
+        font-size: small;
+    }
+
+    .DiscordText {
+        width: 70%;
+        padding: 50px;
+    }
 }
