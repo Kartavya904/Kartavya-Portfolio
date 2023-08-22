@@ -73,11 +73,57 @@
     font-size: small;
 }
 
-@media (max-width: 769px) {
-}
 
 @media (max-width: 420px) {
+
+    .Project {
+        font-size: small;
+    }
+
+    .Sub-Box {
+        height: auto;
+        width: 100%;
+    }
+
+    .Sub-Box-Date h4 {
+        font-size: xx-small;
+        margin: 0px;
+    }
+    
+    .Sub-Box-Title h2 {
+        font-size: x-small;
+        margin: 0px;
+    }
+    
+    .Sub-Box-Description p {
+        margin: 20px;
+        font-size: 7px;
+    }
 }
 
 @media (max-width: 380px) {
+    
+    .Project {
+        font-size: small;
+    }
+
+    .Sub-Box {
+        height: auto;
+        width: 100%;
+    }
+
+    .Sub-Box-Date h4 {
+        font-size: xx-small;
+        margin: 0px;
+    }
+    
+    .Sub-Box-Title h2 {
+        font-size: x-small;
+        margin: 0px;
+    }
+    
+    .Sub-Box-Description p {
+        margin: 20px;
+        font-size: 7px;
+    }
 }
