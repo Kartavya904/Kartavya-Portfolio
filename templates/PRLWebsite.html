@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block title %}
+PRL Website
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylePRL.css') }}">
+<br>
+<div class="Year-In-Reviews">
+    <div class="Back">
+        <a href="Projects"><img src="static/Images/Back.png" alt="Back" width="25" height="25"></a>
+    </div>
+    <div class="Year-In-Review">
+        <h2>Pashupati Road Links Website</h2>
+    </div>
+    <div class="ReviewText">
+        PRL website
+    </div>
+</div>
+<br>
+<script>
+    setActiveButton("Projects");
+</script>
+{% endblock %}

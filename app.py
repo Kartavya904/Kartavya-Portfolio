@@ -60,6 +60,26 @@ def resdash():
 def bytelinksys():
     return render_template('ByteLinkSys.html')
 
+@app.route('/LC')
+# @register_breadcrumb(app, './Gatway', 'Gateway')
+def lc():
+    return render_template('LC.html')
+
+@app.route('/MUC')
+# @register_breadcrumb(app, './Gatway', 'Gateway')
+def muc():
+    return render_template('MUC.html')
+
+@app.route('/RevUC')
+# @register_breadcrumb(app, './Gatway', 'Gateway')
+def revuc():
+    return render_template('RevUC.html')
+
+@app.route('/TCSiON')
+# @register_breadcrumb(app, './Gatway', 'Gateway')
+def tcsion():
+    return render_template('TCSiON.html')
+
 @app.route('/Year-In-Review')
 # @register_breadcrumb(app, './Year-In-Review', 'Year-In-Review')
 def year_in_review():
@@ -85,10 +105,61 @@ def coop_1000():
 def discord():
     return render_template('Discord_Exp.html')
 
+@app.route('/Discord')
+# @register_breadcrumb(app, './Discord-Exp', 'Discord-Exp')
+def discord2():
+    return render_template('Discord.html')
+
+
 @app.route('/Pathways')
 # @register_breadcrumb(app, './Pathways', 'Pathways')
 def pathways():
     return render_template('Pathways.html')
+
+@app.route('/Portfolio')
+# @register_breadcrumb(app, './Discord-Exp', 'Discord-Exp')
+def portfolio():
+    return render_template('Portfolio.html')
+
+@app.route('/VoiceAssistant')
+# @register_breadcrumb(app, './Discord-Exp', 'Discord-Exp')
+def va():
+    return render_template('VoiceAssistant.html')
+
+@app.route('/PySnake')
+# @register_breadcrumb(app, './Discord-Exp', 'Discord-Exp')
+def pysnake():
+    return render_template('PySnake.html')
+
+@app.route('/BodyRecognition')
+# @register_breadcrumb(app, './Discord-Exp', 'Discord-Exp')
+def br():
+    return render_template('BodyRecognition.html')
+
+@app.route('/PRLWebsite')
+# @register_breadcrumb(app, './Discord-Exp', 'Discord-Exp')
+def prl():
+    return render_template('PRLWebsite.html')
+
+@app.route('/ENEDRobot')
+# @register_breadcrumb(app, './Discord-Exp', 'Discord-Exp')
+def ened():
+    return render_template('ENEDRobot.html')
+
+@app.route('/PythonChess')
+# @register_breadcrumb(app, './Discord-Exp', 'Discord-Exp')
+def pychess():
+    return render_template('PythonChess.html')
+
+@app.route('/SwiftGame')
+# @register_breadcrumb(app, './Discord-Exp', 'Discord-Exp')
+def swift():
+    return render_template('SwiftGame.html')
+
+@app.route('/SalesManagement')
+# @register_breadcrumb(app, './Discord-Exp', 'Discord-Exp')
+def sales():
+    return render_template('SalesManagement.html')
 
 @app.route('/Contact', methods=['GET', 'POST'])
 # @register_breadcrumb(app, './Contact', 'Contact')

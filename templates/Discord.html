@@ -1,0 +1,69 @@
+{% extends "index.html" %}
+
+{% block title %}
+Discord Bot Developer
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleDiscord.css') }}">
+<br>
+<div class="DiscordContainer">
+    <div class="DiscordImage">
+        <img id="DiscordImage" src="{{ url_for('static', filename='/Images/Discord_Exp_2.jpeg') }}" width="400" height="200" alt="Discord Picture">
+    </div>
+    <div class="DiscordText">
+        <div class="Back">
+            <a href="Projects"><img src="static/Images/Back.png" alt="Back" width="25" height="25"></a>
+        </div>
+        <div class="DiscordTitle">
+            <h2>Discord Bot Developer</h2>
+        </div>
+        <div class="DiscordDescription">
+            <p>
+                As a programming enthusiast, I have always been fascinated by the world of bots and automation. And what better way to apply my skills than to develop my own Discord bot application. In October 2020, I embarked on this project, determined to create a comprehensive and functional bot that would enhance the Discord experience for users.
+                <br><br>
+                I started by researching the various libraries available for Discord bot development, and after evaluating several options, I settled on using Discord.js and Discord.py. These libraries provided an extensive set of tools and resources for building a versatile and reliable bot. I also decided to use the Math.js library of JavaScript to enable the bot to perform mathematical calculations and computations.
+                <br><br>
+                One of the primary goals of my bot was to create a utility tool that would allow users to manage and customize their Discord channels, roles, and other server settings. With this in mind, I began developing the bot's core functions, which included the ability to create, delete, and modify channels and roles. I also added several other useful features, such as setting custom welcome messages, adding or removing members, and assigning roles based on specific criteria.
+                <br><br>
+                As the bot took shape, I realized that it would be incomplete without a music bot component. Thus, I started working on integrating a music player into the bot, allowing users to play their favorite songs and playlists. I made sure to include features such as volume control, skip and repeat functions, and the ability to create and manage playlists.
+                <br><br>
+                Another aspect of my bot that I wanted to develop was the gaming component. I started by creating a two-player tic-tac-toe game that users could play against each other. I then moved on to developing a single-player word scramble game, where users had to unscramble words to score points. To add more excitement, I created a single-player fighting game that allowed users to battle against a bot opponent. And to take things to the next level, I developed a multiplayer card fighting game, called AniCard Bot, where users could select action anime characters and fight against each other.
+                <br><br>
+                As the bot continued to evolve, I added more features, such as user data storage on MongoDB, enabling the bot to store user preferences and settings. I also created a help command that provided users with a list of available commands and their functions. I made sure to test and debug the bot thoroughly to ensure that it functioned correctly and efficiently.
+                <br><br>
+                Over the next few months, the bot gained popularity and attracted a growing community of users. As the number of users increased, I realized that I needed to improve the bot's scalability and performance. I restructured the code and optimized the algorithms, which resulted in a significant improvement in the bot's response time.
+                <br><br>
+                Throughout the development process, I encountered several challenges and obstacles that tested my programming skills and patience. One of the biggest challenges was dealing with the various errors and bugs that inevitably arise in complex software projects. I had to learn to debug and troubleshoot effectively to ensure that the bot ran smoothly.
+                <br><br>
+                Another challenge was keeping up with the ever-evolving Discord platform and its changing APIs. Discord frequently releases updates and changes to its APIs, which can affect the bot's functionality. I had to stay up to date with the latest developments and adapt my code accordingly.
+                <br><br>
+                Despite these challenges, I found the development process to be incredibly rewarding and fulfilling. The bot became a labor of love, and I spent countless hours refining and improving its features. The positive feedback from the users and their appreciation for the bot made all the effort worthwhile.
+                <br><br>
+                In August 2021, I decided to take a break from any further advancements to the project and focus on each functionality to develop it at its best. However, the experience of developing a Discord bot application taught me valuable skills in programming, problem-solving, and project management. It also allowed me to interact with a diverse and vibrant community of Discord users and learn about their needs and preferences.
+                <br><br>
+                Although currently, in 2023, I am no longer actively developing the bot, I still receive messages from users asking for assistance or suggesting new features. It is heartening to see that the bot has made a positive impact on the Discord community, and I am proud to have contributed to it.
+                <br><br>
+                Looking back at the project, I realized that the most crucial factor in its success was my passion for programming and my willingness to learn and explore new technologies. As I navigated the challenges and obstacles that came my way, I constantly reminded myself of the reasons why I started the project and the goals that I wanted to achieve. This kept me motivated and focused, even when the going got tough.
+                <br><br>
+                In conclusion, the experience of developing a Discord bot application has been one of the most rewarding and fulfilling projects I have undertaken. It allowed me to apply my programming skills to practical and real-world problems, and it taught me valuable lessons in project management, problem-solving, and teamwork. I encourage anyone who is interested in programming and bot development to try their hand at building a Discord bot application. With the right mindset and determination, anyone can create a functional and versatile bot that can enhance the Discord experience for users.
+            </p>
+        </div>
+    </div>
+</div>
+<br>
+<script>
+    function setActiveButton(pageName) {
+                    const buttons = document.querySelectorAll(".nav-button");
+                    pageName = pageName.replace(/_/g, " ");
+                    buttons.forEach(button => {
+                        if (button.textContent.trim() === pageName) {
+                            button.classList.add("active");
+                        } else {
+                            button.classList.remove("active");
+                        }
+                    });
+                }
+                setActiveButton("Projects");
+</script>
+{% endblock %}
