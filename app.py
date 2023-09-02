@@ -50,6 +50,16 @@ def honors_experience():
 def gateway():
     return render_template('Gateway.html')
 
+@app.route('/ResDash')
+# @register_breadcrumb(app, './Gatway', 'Gateway')
+def resdash():
+    return render_template('ResDash.html')
+
+@app.route('/ByteLinkSys')
+# @register_breadcrumb(app, './Gatway', 'Gateway')
+def bytelinksys():
+    return render_template('ByteLinkSys.html')
+
 @app.route('/Year-In-Review')
 # @register_breadcrumb(app, './Year-In-Review', 'Year-In-Review')
 def year_in_review():

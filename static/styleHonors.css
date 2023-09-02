@@ -29,7 +29,7 @@
 .Sub-Box {
     color: #993500;
     width: 100%;
-    height: 25vh;
+    height: auto;
     background-color: #FFFCCC;
     display: flex;
     margin-bottom: 30px;
