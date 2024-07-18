@@ -32,11 +32,11 @@ Contact
                     <a href="https://www.instagram.com/kartavya1710/" target="_blank" data-tooltip="Instagram">
                         <img src="{{ url_for('static', filename='/Images/instagram.png') }}" alt="Instagram Icon">
                     </a>
-                </div>                                               
+                </div>
             </div>
         </div>
         <div class="ContactForm">
-            <form action="{{ url_for('contact') }}" method="POST">
+            <form id="contact-form">
                 <div class="FormRow">
                     <div class="FormField">
                         <label for="name">Name:</label>
@@ -71,7 +71,7 @@ Contact
                 <div class="FormRow">
                     <div class="FormField">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Please Enter Your Message Here..."  required></textarea>
+                        <textarea id="message" name="message" rows="4" placeholder="Please Enter Your Message Here..." required></textarea>
                     </div>
                 </div>
                 <button type="submit">Send</button>
@@ -80,4 +80,54 @@ Contact
     </div>
 </div>
 <br>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("DQtSBHU6fwXVESTyF"); // Initialize EmailJS with your user ID
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Get form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value || "N/A";
+        const location = document.getElementById('location').value || "N/A";
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        // Construct the message to send
+        const messageToSend = `
+            Hi Kartavya, This is ${name}.
+            My email is ${email}.
+            My phone number is ${phone}.
+            I am from ${location}.
+            
+            I wanted to say:
+            ${message}.
+        `;
+
+        // Prepare the template parameters
+        const templateParams = {
+            from_name: name,
+            message: messageToSend
+        };
+
+        console.log('Sending email with parameters:', templateParams);
+
+        // Send the email using EmailJS
+        emailjs.send('service_oapsc78','template_8yvjxhx', {
+            from_name: name,
+            message: messageToSend
+            })
+            .then(function(response) {
+                console.log('Email sent successfully:', response);
+                alert('Message sent successfully!');
+            }, function(error) {
+                console.error('Failed to send email:', error);
+                alert('Failed to send message. Please try again later.');
+            });
+    });
+</script>
 {% endblock %}

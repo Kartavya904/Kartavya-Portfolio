@@ -90,6 +90,11 @@ def year_in_review():
 def year_in_review_2022_2023():
     return render_template('Year-In-Review-2022-2023.html')
 
+@app.route('/Year-In-Review-2023-2024')
+# @register_breadcrumb(app, './Year-In-Review-2023-2024', 'Year-In-Review-2023-2024')
+def year_in_review_2023_2024():
+    return render_template('Year-In-Review-2023-2024.html')
+
 @app.route('/Involvements')
 # @register_breadcrumb(app, './Involvements', 'Involvements')
 def involvements():
@@ -185,7 +190,7 @@ def contact():
             to_emails='singhk6@mail.uc.edu',
             subject=Subject,
             html_content=f'<strong>{messageToSend}</strong>')
-        print(message)
+        print(message) 
         try:
             # sg = SendGridAPIClient(secret_key)
             # response = sg.send(message)

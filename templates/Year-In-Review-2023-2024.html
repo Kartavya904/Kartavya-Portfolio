@@ -1,0 +1,69 @@
+{% extends "index.html" %}
+
+{% block title %}
+Year-In-Review
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styleYearInReview2022-2023.css') }}">
+<br>
+<div class="Year-In-Reviews">
+    <div class="Back">
+        <a href="Year-In-Review"><img src="static/Images/Back.png" alt="Back" width="25" height="25"></a>
+    </div>
+    <div class="Year-In-Review">
+        <h2>Year-In-Review 2023 - 2024</h2>
+    </div>
+    <div class="ReviewText">
+        <p>As I reflect on the past year, I am filled with an immense sense of pride and accomplishment. The year 2023-2024 has been a transformative journey, both personally and professionally, marked by a multitude of extraordinary experiences and significant personal growth. In this comprehensive year-in-review, I will take you through the remarkable moments and noteworthy achievements that have shaped my path and propelled me forward.
+            <br><br>
+            One of the most impactful experiences of the year was my COOP placement at the iCDCU Lab as a Python/Flask App Developer from May 2023 to August 2023. This role offered me a unique opportunity to hone my skills and contribute meaningfully to a significant project. I led the development of dynamic webpages for the ResDash Project, aimed at enhancing the user experience for University of Cincinnati Resident Doctors. Utilizing HTML, CSS, Python, and JavaScript, I successfully launched the first website, which was met with positive feedback for its usability and design. This project involved not only technical development but also a deep understanding of user needs and seamless integration of various technologies. Additionally, I streamlined the codebase by eliminating redundant segments and implementing reusable components, which significantly improved the efficiency of the application by 45%. The integration of D3, Flask, Django, Flask Breadcrumbs, and Bootstrap further optimized the project, showcasing my ability to handle complex development tasks and deliver impactful solutions. This experience taught me the importance of efficient coding practices and the value of creating a user-friendly interface, which are essential skills in my career as a developer.
+            <br><br>
+            The MakeUC Hackathon in 2024 marked another significant milestone in my journey. This year, I had the opportunity to create FaunaFinder: AI-Powered Animal Breed Recognition, a project that marries my passion for wildlife with cutting-edge technology. Inspired by a deep love for animals and a desire to explore their beauty, my team and I developed a web application that allows users to identify and learn about various animal species through images and names. The inspiration behind FaunaFinder was our deep passion for wildlife and the desire to capture the essence of animals around the world. As avid travelers and wildlife enthusiasts, we envisioned creating a program that goes beyond just taking pictures. This program empowers users to unravel the mysteries of the animal kingdom by instantly identifying animals, learning about their species, discovering their unique characteristics, and accessing a wealth of information. We were particularly excited about sharing this remarkable experience with others who share our fascination with wildlife.
+            <br><br>
+            <div class="LibraryImage">
+                <img src="static/Images/FaunaFinder.jpg" alt="Library" width="150" height="175">
+            </div>
+            <br><br>
+            FaunaFinder is a captivating web application that serves as a gateway to the enchanting world of wildlife. Whether you've captured a mesmerizing image of an animal in the wild or simply have the name of an animal in mind, our platform brings you closer to nature's most wondrous creatures. Using Google Cloud Vision, Python, Flask, and a host of other technologies, we built a platform that not only identifies animals but also provides comprehensive information about them via Wikipedia integration and similar species through the GBIF API. Users can also explore the world of random animals, adding an element of surprise and education to the mix. Throughout the development process, we encountered several challenges, such as ensuring accurate animal recognition from user-uploaded images and handling cases where the API's results included breeds and subcategories. We also faced complexities in gathering and presenting comprehensive information about animals from multiple sources. Overcoming these challenges required extensive problem-solving and fine-tuning of our application. Despite these hurdles, we achieved a high degree of precision and enriched the user experience with educational surprises. Our efforts were recognized with the Best Use of AI in Education award, a testament to our innovative approach and technical expertise.
+            <br><br>
+            In addition to my hackathon successes, I had the distinct honor of becoming the Director of Values at the National Residence Hall Honorary (NRHH). This role allowed me to engage with a diverse group of eager students and lead numerous service and recognition projects. As Director of Values, I was deeply involved in organizing events that fostered a sense of community and appreciation within the residential halls. One notable event was the team recognition for the RED Staff, who ensure the wellbeing of residence hall students, and another for the CAPS (Counsel of Psychological Services), who support student mental health. These events highlighted the critical roles these teams play in maintaining a supportive and inclusive environment for students. Additionally, our service project involved creating and donating 300 bookmarks to the local public library, fostering a sense of community and giving back. This project was particularly rewarding as it brought together volunteers who were passionate about making a difference. These experiences have deepened my appreciation for service and leadership, and I look forward to continuing my contributions in the upcoming semester. The opportunity to lead and work with such dedicated individuals has been incredibly fulfilling, and I am excited to see what the future holds for the NRHH.
+            <br><br>
+            <div class="JapaneseImage">
+                <img src="static/Images/NRHH_Web.jpg" alt="Japanese" width="150" height="100">
+            </div>
+            <br><br><br>
+            The RevUC Hackathon presented another opportunity for growth and innovation. Our project, HealthSphere, aimed to revolutionize health and wellness through data-driven insights and personalized recommendations. Inspired by the desire to empower individuals in their health journeys, we built a platform using Python Flask, PostgreSQL, Taipy, HTML, CSS, and JavaScript. HealthSphere offers users a comprehensive approach to health management, from tracking daily activities to visualizing data through interactive graphs. The inspiration behind HealthSphere stemmed from a desire to revolutionize the way people approach their health and well-being. We wanted to create a platform that seamlessly integrates data-driven insights, personalized recommendations, and holistic wellness practices to empower individuals to take control of their health journey like never before. The platform leverages cutting-edge technology and data analytics to provide users with personalized insights, actionable recommendations, and interactive tools to optimize their physical, mental, and emotional well-being. From tracking daily activities and monitoring vital signs to visualizing data using graphs, HealthSphere offers a holistic approach to health management.
+            <br><br>
+            HealthSphere was meticulously crafted using a diverse set of technologies to ensure a comprehensive and effective solution for our users. For the backend development, we utilized Python Flask to build the backend infrastructure, PostgreSQL for data storage and management, and Taipy for data analysis and manipulation. On the frontend, HTML and CSS were used to design the user interface, while JavaScript was employed to implement dynamic and interactive elements. Python served as the primary language for data analysis and integration tasks, with libraries like pandas. We also sourced relevant datasets and insights from Kaggle. Throughout the development process, we relied on tools such as GitHub for version control, and Visual Studio Code for code editing and debugging. Our iterative prototyping, rigorous testing, and continuous refinement ensured a seamless and user-friendly experience for HealthSphere users. During the development process, we faced several challenges. One of the significant challenges was integrating disparate data sources seamlessly into our PostgreSQL database. We encountered varying data formats and structures, requiring careful normalization and transformation to ensure consistency and accuracy. Additionally, leveraging Taipy for data analysis posed its own challenges, particularly in visualizing complex datasets effectively. We needed to create insightful graphs and charts to present data-driven insights to users in an understandable format. Moreover, optimizing the platform's performance for real-time analytics while maintaining data security and privacy compliance was a multifaceted challenge. Balancing the need for speed with stringent data protection measures required meticulous fine-tuning and rigorous testing. Furthermore, designing an intuitive user interface that caters to diverse user needs and preferences proved to be a nuanced endeavor. We navigated through feedback loops and user testing sessions to refine the interface iteratively, ensuring a seamless and engaging user experience. Despite these challenges, our team's collaboration, innovation, and perseverance enabled us to overcome obstacles and deliver a robust and reliable solution with HealthSphere. We were proud to have developed a sophisticated health and wellness platform that has the potential to make a meaningful impact on people's lives. Our platform empowers individuals to proactively manage their health, make informed decisions, and adopt healthy habits that contribute to long-term well-being. Furthermore, we're proud of the seamless integration of technology and data analytics to deliver personalized experiences that resonate with our users. Our efforts were rewarded with two prestigious awards: Best Digital Solution to Improve the Clinical Trial Process (Medpace) and Best Use of Taipy. These accolades highlight our commitment to leveraging technology for impactful health solutions.
+            <br><br>
+            <div class="BearChatImage">
+                <img src="static/Images/HealthSphere.jpg" alt="BearChat" width="150" height="175">
+            </div>
+            <br><br><br><br>
+            Looking ahead, I am brimming with excitement and an insatiable thirst for new opportunities and challenges that lie on the horizon. Building upon the strong foundation I have established; I intend to seize every chance to further my personal and professional growth. The experiences of the past year have indubitably transformed me into a more confident, resilient, and well-rounded individual. I am grateful for the tremendous growth and accomplishments I have achieved, and I remain resolute in my determination to continually push the boundaries of my potential and reach new heights in all my future endeavors.
+            <br><br>
+            In conclusion, the year 2023-2024 stands as a pivotal period characterized by profound personal growth and remarkable achievements. From participating in awe-inspiring hackathons to broadening my cultural horizons, each experience has contributed to my overall development as an individual. I am grateful for the countless opportunities that have graced my path and the invaluable lessons I have learned along this remarkable journey. The year gone by has laid the groundwork for a future brimming with endless possibilities, and I embark upon the upcoming chapter of my life with unwavering excitement and anticipation.
+            <br>
+        </p>
+    </div>
+</div>
+<script>
+    function goToPage(url) {
+        window.location.href = url;
+    }
+    function setActiveButton(pageName) {
+        const buttons = document.querySelectorAll(".nav-button");
+        pageName = pageName.replace(/_/g, " ");
+        buttons.forEach(button => {
+            if (button.textContent.trim() === pageName) {
+                button.classList.add("active");
+            } else {
+                button.classList.remove("active");
+            }
+        });
+    }
+    setActiveButton("Honors");
+</script>
+<br>
+{% endblock %}
