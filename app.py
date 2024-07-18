@@ -185,21 +185,21 @@ def contact():
         messageToSend = "Hi Kartavya, This is " + name + ". My email is " + email + ". My phone number is " + phone + ". I am from " + location + ". " + "\nI wanted to say:\n" + message + "."
 
         # Send email to myself
-        message = Mail(
-            from_email='singhk6@mail.uc.edu',
-            to_emails='singhk6@mail.uc.edu',
-            subject=Subject,
-            html_content=f'<strong>{messageToSend}</strong>')
-        print(message) 
-        try:
-            # sg = SendGridAPIClient(secret_key)
-            # response = sg.send(message)
-            print("Email sent successfully")
-            return "<script LANGUAGE='JavaScript'> window.alert('Message Successfully Sent!'); window.location.href = 'Contact'</script>)"
-        except Exception as e:
-            print("Error sending email")
-            print(e)
-            return "<script LANGUAGE='JavaScript'> window.alert('Message Failed To Send!'); window.location.href = 'Contact'</script>)"
+        # message = Mail(
+        #     from_email='singhk6@mail.uc.edu',
+        #     to_emails='singhk6@mail.uc.edu',
+        #     subject=Subject,
+        #     html_content=f'<strong>{messageToSend}</strong>')
+        # print(message) 
+        # try:
+        #     # sg = SendGridAPIClient(secret_key)
+        #     # response = sg.send(message)
+        #     print("Email sent successfully")
+        #     return "<script LANGUAGE='JavaScript'> window.alert('Message Successfully Sent!'); window.location.href = 'Contact'</script>)"
+        # except Exception as e:
+        #     print("Error sending email")
+        #     print(e)
+        #     return "<script LANGUAGE='JavaScript'> window.alert('Message Failed To Send!'); window.location.href = 'Contact'</script>)"
 
 
     return render_template('Contact.html')
